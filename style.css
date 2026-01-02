@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Light mode */
+body {
+    background-color: #f4f6f8;
+    color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: background 0.3s, border 0.3s;
+}
+
+body.dark header {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #0077ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Center controls */
+.center-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Theme button */
+.theme-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #ddd;
+}
+
+body.dark .theme-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Search */
+.search-box input {
+    width: 280px;
+    padding: 8px 1px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+body.dark .search-box input {
+    background-color: #2a2a2a;
+    color: #fff;
+    border-color: #444;
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+}
+
+
+body.dark .icon {
+    background-color: #333;
+}
+
+
+
+body.dark .content-box {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
